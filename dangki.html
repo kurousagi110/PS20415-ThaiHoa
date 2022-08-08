@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Nhúng file CSS -->
+    <link rel="stylesheet" href="dangki.css" />
+</head>
+
+<body background="uploads/Aesthetics.jpg">
+    <!-- Nhúng file JavaScript -->
+    <script language="javascript" src="dangki.js"></script>
+    <form action="" method="POST" onsubmit=" validate()">
+        <div class="register">
+            <h1>Đăng ký</h1>
+            <p>Vui lòng điền thông tin để đăng ký</p>
+            <label><b>Mã sinh viên</b></label>
+            <input type="text" placeholder="" id="maSV">
+            <p><span id="txtMaSV"></span></p>          
+            <label><b>Họ và tên</b></label>
+            <input type="text" placeholder="Họ tên" id="hoTen">
+            <p><span id="txtHoTen"></span></p>
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Email@....com" id="Email" onkeyup="isEmail();">
+            <p><span id="txtEmail"></span></p>
+            <div>
+                <fieldset>
+                    <legend><b>Sở thích </b></legend>
+                    <label for="">
+                        <input type="checkbox" id="check1">Đọc sách
+                    </label>
+                    <label for="">
+                        <input type="checkbox" id="check2">Du lịch
+                    </label>
+                    <label for="">
+                        <input type="checkbox" id="check3">Âm nhạc
+                    </label>
+                    <label for="">
+                        <input type="checkbox" id="check4">Ẩm thực
+                    </label>
+                    <label for="">
+                        <input type="checkbox" id="check5">Khác
+                    </label>
+                    <p><span id="txtCheck"></span></p>
+                </fieldset>
+                <br>
+                <div>
+                    <p class="label">Giới tính</p>
+                    <div class="inputGender">
+                      <input type="radio" name="gender" id="male" required /><label
+                        for="male">Nam</label>
+                      <input type="radio" name="gender" id="female" required /><label
+                        for="female">Nữ</label>
+                        <p><span id="txtGioiTinh"></span></p>
+                    </div>
+                <br>
+                <div class="blockNationality">
+                    <p class="label">Quốc tịch</p>
+                    <div class="inputNationality">
+                      <input
+                        list="nationalities"
+                        id="nationality"
+                        placeholder="Chọn quốc gia"
+                        required
+                      />
+                      <datalist id="nationalities">
+                        <option value="Anh"></option>
+                        <option value="Đức"></option>
+                        <option value="Pháp"></option>
+                        <option value="Ý"></option>
+                        <option value="Việt Nam"></option>
+                      </datalist>
+                    </div>
+                    <p><span id="txtQuocGia"></span></p>
+                  </div>               
+                <hr>
+                <div>
+                    <p>Ghi chú</p>
+                    <textarea name="note" id="note" cols="60" rows="10"></textarea>
+                    <p><span id="txtGhiChu"></span></p>
+                  </div>
+            </div>
+            <p>Để tạo tài khoản vui lòng đồng ý với điều khoản của chúng tôi <a href="#">Terms & Privacy</a>.</p>
+            <button type="button" class="submit" onclick="kiemTra();">Đăng ký</button>
+            <hr>
+        </div>
+        <div class="register login">
+            <p>Bạn đã có tài khoản rồi? <a href="dangnhap.html">Đăng nhập</a>.</p>
+        </div>
+    </form>
+</body>
+
+</html>

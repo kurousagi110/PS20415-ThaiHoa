@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="header.css">
+
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>E-Shop</title>
+    <link rel="stylesheet" href="chitietSP.css" />
+  </head>
+  <body>
+    <header>
+        <div class="container">
+			<nav>
+				<a href="">Shop Sách</a>
+				<label for="toggle-menu" class="btn-toggle-menu">
+					<i class="fas fa-bars"></i>
+				</label>
+				<input type="checkbox" id="toggle-menu">
+				<ul class="menu">
+					<li class="active"><a href="index.html" target="page">Trang chủ</a></li>
+                    <li><a href="sanpham.html" target="page">Manga</a>
+						<li><a href="giohang.html" target="page">Mua sắm</a></li>
+                        <li><a href="dangnhap.html" target="page">Đăng nhập</a></li>
+                        <li><a href="dangki.html" target="page">Đăng kí</a></li>
+				</ul>
+			</nav>
+		</div>         
+    </header>
+    <div class="container">
+      <form action="addToCart" method="post">
+        <div class="product">
+                <div class="row">
+            <div class="col-md-4">
+              <img class="product-image" src="detail/akamegakill.png" alt="Product-IMG" />
+            </div>
+            <div class="col-md-4">
+              <div class="product-name"><h3>Akame Ga Kill</h3></div>
+              <div class="product-price">Price: 2500$</div>
+              <div class="product-description">
+                <p><strong>Release Date:</strong> Nov-2022</p>
+                <p><strong>Code:</strong> FIGURE-142835</p>
+                <p><strong>Brand:</strong> Max Factory</p>
+                <p><strong>Product Line:</strong> POP UP PARADE</p>
+                <p><strong>Series Title:</strong> "Street Fighter" Series</p>
+                <p><strong>Character Name:</strong> Chun Li</p>
+                <p><strong>Sculptor:</strong> Shining Wizard @ Sawatika Max Factory</p>
+                <p><strong>Copyright:</strong> CAPCOM CO.， LTD. ALL RIGHTS RESERVED.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-quantity">
+                <label>Quantity: </label>
+                <select name="quantity" class="quantity">
+                  <option value="">1</option>
+                </select>
+              </div>
+              <div class="product-total">
+                Total:<label id="total">2500$</label>
+              </div>
+              <div class="product-addBtn">
+                <button class="btn btn-warning" type="submit" id="addBtn">
+                    <a href="giohang.html">Add to Cart</a>                 
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="content">Designer By hoatrinh14020@gmail.com</div>
+        </div>
+
+    </footer>
+  </body>
+</html>
